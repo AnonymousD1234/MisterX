@@ -389,8 +389,8 @@ def INDEX(url,page):
         response.close()
 		
         # Getting all the data from the url
-        IDString = re.compile('var tumbid  =\[(.+?)\];').findall(link)
-        NamesString = re.compile('var tumbalt =\[(.+?)\];').findall(link)
+        IDString = re.compile('var tumb_id  =\[(.+?)\];').findall(link)
+        NamesString = re.compile('var tumb_alt =\[(.+?)\];').findall(link)
 
     
         # Processing data into usable data
